@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    color: var(--color-white);
+  }
+  
+  .btn-primary {
+    color: var(--color-white) !important;
+    border: 1px solid var(--bg-primary) !important;
+    background-color:  var(--bg-blue) !important;
+  }
+  .btn-primary:hover {
+    background-color: var(--bg-blue-hover) !important;
+  }
+ 
+  
+  
+  header {
+    padding: 0 50px;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  header nav .navbar-brand {
+    color: var(--color-white);
+    font-weight: 900;
+  }
+  
+  header nav .navbar-brand:hover {
+    color: var(--color-white);
+  }
+  
+  header nav ul li a.nav-link {
+    color: var(--color-white);
+  }
+  
+  header nav ul li a.nav-link:hover {
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+  }
+  
+  #home,
+  #about,
+  #works,
+  #contact {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #home {
+    margin-top: -57px;
+    height: calc(100vh + 57px); /* 56px eshte kompenzim per margin topin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://www.pixground.com/wp-content/uploads/2023/09/Sunset-Mountains-4K-Wallpaper-1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+
+  }
+  
+  #home .home-title {
+    font-weight: 900;
+  }
+  
+  #home .home-subtitle {
+    font-weight: 100;
+  }
+  
+  #home .home-subtitle b {
+    font-weight: 600;
+  }
+  
+  #about {
+    background-color: var(--bg-white);
+    color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about .about-img {
+    background-color: var(--bg-blue);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms;
+  }
+  
+  #about .about-img:hover {
+    transform: scale(1.2);
+    background-color: var(--bg-blue-hover);
+    cursor:pointer;
+  }
+  #about .about-img:hover img {
+    transform: scale(0.8);
+  }
+  
+  #about .about-img img {
+    max-height: 400px;
+    transition: all 500ms;
+  }
+  
+  #about h3 {
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  
+  #about .sub-title,
+  #about p {
+    color: var(--color-gray);
+  }
+  
+  #works {
+    background-color: var(--bg-gray);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100% !important;
+  }
+  
+  #works .row {
+    row-gap: 25px;
+  }
+  
+  #works h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  #works .card {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-primary);
+    color: var(--color-white);
+  }
+  
+  #works .card:hover .card-icon {
+    background-color: var(--bg-orange-hover);
+    cursor: pointer;
+  }
+  #works .card .first-a{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300;
+    height: 200px;  
+  }
+  
+  #works .card .card-icon {
+    color: var(--color-white);
+    background-color: var(--bg-gray);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: all 500ms;
+  }
+  
+  #works .card h5 {
+    font-weight: 900;
+  }
+  
+  #works .card p {
+    text-align: center;
+  }
+  
+  #contact {
+    background-color: #ececec;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100% !important;
+  }
+  
+  #contact h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--color-primary);
+  }
+  
+  #contact .contact-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #contact .from-group .form-label,
+  #contact .contact-info {
+    color: var(--color-primary);
+  }
+  
+  footer {
+    background-color: var(--bg-blue-hover);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    header {
+      padding: 0;
+      background-color: var(--bg-white);
+    }
+  
+    header nav {
+      background-color: var(--bg-white);
+    }
+  
+    header nav .navbar-brand {
+      color: var(--color-primary);
+    }
+  
+    header nav .navbar-brand:hover {
+      color: var(--color-primary);
+    }
+  
+    header nav ul li a.nav-link {
+      color: var(--color-primary);
+    }
+  
+    header nav ul li a.nav-link:hover {
+      color: var(--color-primary);
+      border-bottom: 1px solid var(--color-primary);
+    }
+  }
+ .first-a{
+ text-decoration: none;
+ color: white;
+ width: 300px;
+ height: 300px;
+ }
+ .first-a:hover{
+    text-decoration: none;
+ color: white;
+ width: 100px;
+ height: 100px;
+
+ }
+ ::-webkit-scrollbar{
+    background-color: #004e0a;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+::-webkit-scrollbar-button{
+    background-color: #535353;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    border-style: solid;
+    
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: #6c96716b;
+    border-radius: 10px;
+    cursor: grab;
+
+}
+::-webkit-scrollbar-track{
+    background-color: #252525;
+}
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 16px;
+  width: 16px;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555555 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+
+::selection{
+ background-color: rgb(41, 174, 234);
+ color: rgb(143, 90, 27);
+}

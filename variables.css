@@ -1,0 +1,26 @@
+
+  :root {
+    /* FONT COLORS */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-primary: #323232;
+    --color-primary-hover: #505050;
+    --color-gray: #748182;
+    --color-blue:rgb(116, 189, 218);
+     --color-blue-hover:rgb(112, 174, 199);
+     --color-orange:rgb(207, 135, 0);
+     --color-orange-hover:rgb(245, 94, 39);
+     
+
+
+    /* BACKGROUND COLORS */
+    --bg-white: #ffffff;
+    --bg-black: #000000;
+    --bg-primary: #323232;
+    --bg-primary-hover: #505050;
+    --bg-gray: #748182;
+   --bg-blue:rgb(116, 189, 218);
+   --bg-blue-hover:rgb(112, 174, 199);
+   --bg-orange:rgb(255, 166, 0);
+   --bg-orange-hover:rgb(245, 94, 39);
+}
